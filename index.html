@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="icon" href="style/photo/pageIcon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style/logain.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logain-page">
+        <div class="user-name">
+          <input class="input-box" type="text" placeholder="Enter your name" />
+          <span class="underline"></span>
+          <p>This Field Must Be Entered</p>
+        </div>
+        <div class="choose-quize">
+          <p>...اختر اي اختبار تريده</p>
+          <div class="box">
+            <p>This Field Must Be Choosen</p>
+          </div>
+          <div class="start-game">
+            <button>
+              start Game
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="quiz-name">
+          <p>islamic quiz</p>
+        </div>
+        <div class="page-stlye night">
+          <div class="holder">
+            <div class="night"></div>
+            <div></div>
+            <div class="day"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="end">
+          <p class="name"></p>
+          <p class="text"></p>
+          <button>Play Again</button>
+        </div>
+        <div class="quistion">
+          <div class="quistion-info">
+            <p class="quiz-name"></p>
+            <p>number of quistion <span class="quistion-num"></span></p>
+          </div>
+          <div class="quistions">
+            <div class="title"></div>
+            <div class="answers-area"></div>
+            <div class="send">
+              <button>
+                submit Answer
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="score-time">
+          <div class="score"></div>
+          <div class="time">00:0<span class="secound">0</span></div>
+        </div>
+
+        <audio src="sounds/succes.mp3" class="right-ans-sound"></audio>
+        <audio src="sounds/wrong.mp3" class="wrong-ans-sound"></audio>
+        <audio src="sounds/start.mp3" class="start-sound"></audio>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

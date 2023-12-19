@@ -1,0 +1,32 @@
+1- create json Object
+2- create html 
+    ==>  create logain page (name - which quiz)
+    ==>  create navbar  add night and day button  
+    ==>  add name of quiz in navbar 
+    ==>  create container 
+    ==>  add quiz title
+    ==>  add answers
+    ==>  add submit Button
+    ==>  add bulletes to number of quistions
+    ==>  add count douwn 
+    
+
+2- create style
+
+3- create js
+ ==> add Event to night And Day button
+ ==> add logain page
+ ==> create variable of rightAnswer , rongAnwer , crentIndex 
+ ==> call XMLHTTPREQUEST of quistions
+ ==> show name of quiz and number of quistions from json Object
+ ==> show First quistion  
+ ==> show answers
+ ==> Event of submit Button
+ ==> create countDown Timer
+ ==> if Timer End ..  Mark The Quistion As Wrong And Show The Next Quistion
+ ==>
+ ==>
+ ==>
+ ==>
+ ==>
+ ==>
