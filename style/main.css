@@ -305,7 +305,6 @@
   display: block;
   position: relative;
   padding: 0.7em 2.4em;
-  font-size: 18px;
   background: #313131;
   cursor: pointer;
   user-select: none;
@@ -447,14 +446,14 @@ nav .page-stlye .holder div:nth-child(3) {
 }
 @media (max-width: 767px) {
   .content {
-    width: 400px;
-    font-size: 15px;
+    width: 350px;
+    font-size: 10px;
   }
 }
 @media (min-width: 768px) {
   .content {
-    width: 700px;
-    font-size: 20px;
+    width: 500px;
+    font-size: 15px;
   }
 }
 @media (min-width: 1024px) {
@@ -481,15 +480,14 @@ nav .page-stlye .holder div:nth-child(3) {
 }
 /* ________________ */
 .content .quistions {
-  padding: 30px;
-  text-align: right;
+  padding: 2px 10px;
+  text-align: center;
   background-color: #ffffff51;
 }
 .content .quistions p.title {
   text-transform: capitalize;
   margin: 15px 0;
   padding: 10px;
-  font-size: 25px;
   background-color: #939393;
   color: #fff;
   font-weight: bold;
@@ -498,14 +496,14 @@ nav .page-stlye .holder div:nth-child(3) {
 }
 .content .quistions .answers-area {
   background-color: #939393;
-  padding: 15px;
+  padding: 8px;
   font-weight: bold;
 }
 .content .quistions .answers-area .answer {
   margin: 10px;
   text-align: end;
   background: #8f8f8f;
-  padding: 20px;
+  padding: 10px;
   border-bottom: 1px solid #ddd;
   border-right: 1px solid #ddd;
   box-shadow: 3px 5px 10px 0px #020202;
@@ -515,8 +513,7 @@ nav .page-stlye .holder div:nth-child(3) {
   user-select: none;
 }
 .content .quistions .send {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
 }
 .content .score-time {
   background-color: var(--white-trans);
@@ -532,8 +529,8 @@ nav .page-stlye .holder div:nth-child(3) {
   flex-wrap: wrap;
 }
 .content .score-time .score span {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   display: block;
   background: #ddd;
   border-radius: 50%;
@@ -550,6 +547,14 @@ nav .page-stlye .holder div:nth-child(3) {
   color: #fff;
 }
 
+@media (max-width: 767px) {
+}
+/* large screen */
+@media (min-width: 768px) {
+}
+/* x-large screen */
+@media (min-width: 1024px) {
+}
 /* ................................ */
 /* when Game End */
 .content .end {
@@ -569,6 +574,8 @@ nav .page-stlye .holder div:nth-child(3) {
   justify-content: center;
   align-items: center;
   width: 250px;
+  margin: auto;
+  font-size: 15px;
 }
 .content p {
   color: #fff;
@@ -592,7 +599,6 @@ nav .page-stlye .holder div:nth-child(3) {
   padding: 7px 10px;
   background: var(--main-color-trans);
   color: #fff;
-  font-size: 16px;
   margin-top: 20px;
   border: none;
   cursor: pointer;
