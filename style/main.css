@@ -61,7 +61,6 @@
 
 .logain-page {
   width: 800px;
-  height: 500px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -93,24 +92,31 @@
 }
 /* _____________________ */
 /* mediem screen */
-@media (max-width: 767px) {
+
+@media (max-width: 425px) {
+  .logain-page {
+    width: 350px;
+    font-size: 10px;
+  }
+}
+@media (min-width: 426px) {
   .logain-page {
     width: 450px;
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 /* large screen */
 @media (min-width: 768px) {
   .logain-page {
     width: 600px;
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 /* x-large screen */
 @media (min-width: 1024px) {
   .logain-page {
     width: 700px;
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 /* _____________________ */
@@ -302,6 +308,7 @@
   font-family: inherit;
   font-weight: 500;
   border-radius: 40px;
+  margin-bottom: 15px;
 }
 
 .start-game button span,
