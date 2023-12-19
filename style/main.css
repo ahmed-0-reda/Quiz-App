@@ -441,7 +441,12 @@ nav .page-stlye .holder div:nth-child(3) {
   transform: translate(-50%, -50%);
   color: var(--night_color);
 }
-@media (max-width: 767px) {
+@media (max-width: 425px) {
+  .content {
+    width: 400px;
+  }
+}
+@media (min-width: 426px) {
   .content {
     width: 500px;
   }
@@ -570,7 +575,7 @@ nav .page-stlye .holder div:nth-child(3) {
 }
 .content p {
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
 }
 .content p.name {
   color: var(--main-color);
