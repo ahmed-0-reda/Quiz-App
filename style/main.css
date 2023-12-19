@@ -90,36 +90,9 @@
   transform: translate(-50%, -400%);
   transition: 2s;
 }
-/* _____________________ */
-/* mediem screen */
 
-@media (max-width: 425px) {
-  .logain-page {
-    width: 350px;
-    font-size: 10px;
-  }
-}
-@media (min-width: 426px) {
-  .logain-page {
-    width: 450px;
-    font-size: 10px;
-  }
-}
-/* large screen */
-@media (min-width: 768px) {
-  .logain-page {
-    width: 600px;
-    font-size: 15px;
-  }
-}
-/* x-large screen */
-@media (min-width: 1024px) {
-  .logain-page {
-    width: 700px;
-    font-size: 15px;
-  }
-}
 /* _____________________ */
+
 .user-name {
   position: relative;
   width: 200px;
@@ -207,6 +180,40 @@
   transform: scaleX(1);
 }
 
+/* mediem screen */
+
+@media (max-width: 767px) {
+  .logain-page {
+    width: 300px;
+    font-size: 10px;
+  }
+  .logain-page .box p.work {
+    width: 50px;
+    height: 80px;
+  }
+}
+/* large screen */
+@media (min-width: 768px) {
+  .logain-page {
+    width: 400px;
+    font-size: 15px;
+  }
+  .logain-page .box p.work {
+    width: 50px;
+    height: 80px;
+  }
+}
+/* x-large screen */
+@media (min-width: 1024px) {
+  .logain-page {
+    width: 600px;
+    font-size: 15px;
+  }
+  .logain-page .box p.work {
+    width: 50px;
+    height: 80px;
+  }
+}
 /* ________________________________________________________ */
 
 .choose-quize {
@@ -362,7 +369,7 @@ nav {
   justify-content: space-between;
   padding: 0 20px;
   align-items: center;
-  position: fixed;
+  position: relative;
   z-index: 1111;
   margin-bottom: 50px;
 }
@@ -435,25 +442,19 @@ nav .page-stlye .holder div:nth-child(3) {
 /* ________________________________________________________________ */
 
 .content {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 30px auto;
   color: var(--night_color);
 }
-@media (max-width: 425px) {
+@media (max-width: 767px) {
   .content {
     width: 400px;
-  }
-}
-@media (min-width: 426px) {
-  .content {
-    width: 500px;
+    font-size: 15px;
   }
 }
 @media (min-width: 768px) {
   .content {
     width: 700px;
+    font-size: 20px;
   }
 }
 @media (min-width: 1024px) {
@@ -485,7 +486,6 @@ nav .page-stlye .holder div:nth-child(3) {
   background-color: #ffffff51;
 }
 .content .quistions p.title {
-  font-size: 20px;
   text-transform: capitalize;
   margin: 15px 0;
   padding: 10px;
@@ -550,21 +550,18 @@ nav .page-stlye .holder div:nth-child(3) {
   font-weight: bold;
   color: #fff;
 }
-.end {
-  background-color: #ffffff47;
-  color: #fff;
-  text-align: center;
-  padding: 40px;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: capitalize;
-}
 
 /* ................................ */
 /* when Game End */
 .content .end {
   text-align: center;
   display: none;
+  background-color: #ffffff47;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 .content .end.show {
   display: block;
