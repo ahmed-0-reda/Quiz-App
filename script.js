@@ -11,19 +11,19 @@ let submitBtn = document.querySelector(".send button"),
   ansArea = document.querySelector(".answers-area"),
   quistionNum = document.querySelector(".quistion-num");
 
-startSound();
+// startSound();
 createQ();
 clickEvent();
 startGame();
 nightAndDay();
 PlayAgain();
 
-function startSound() {
-  let sound = document.querySelector(".start-sound");
-  setTimeout(() => {
-    sound.play();
-  }, 3000);
-}
+// function startSound() {
+//   let sound = document.querySelector(".start-sound");
+//   setTimeout(() => {
+//     sound.play();
+//   }, 3000);
+// }
 
 function createQ() {
   let quizsName = ["عن الرسول", "عن الصحابه", "اساله عامه"];
@@ -145,7 +145,7 @@ function getData(choosenQuiz) {
       createBults(qCount);
       clickEventOnAns();
 
-      countDown(5, qCount);
+      countDown(5000, qCount);
 
       submitBtn.onclick = function () {
         let rightAns = dataArr[currentIndex]["answer"];
@@ -155,7 +155,7 @@ function getData(choosenQuiz) {
         currentIndex++;
 
         clearInterval(countDownInterval);
-        countDown(5, qCount);
+        countDown(5000, qCount);
 
         setTimeout(() => {
           submitBtn.style.display = "block";
@@ -286,19 +286,26 @@ function showRightAns(rightAns) {
 }
 
 function countDown(duration, qCount) {
-  let sec = document.querySelector(".time .secound");
-  if (currentIndex < qCount) {
-    countDownInterval = setInterval(() => {
-      sec.innerHTML = `${duration}`;
+  let time = document.querySelector(".quistion .time-left");
 
-      duration--;
+  let minuts, seconds;
 
-      if (duration <= -1) {
+  countDownInterval = setInterval(() => {
+    if (currentIndex < qCount) {
+      minuts = parseInt(duration / 60);
+      seconds = parseInt(duration % 60);
+
+      minuts = minuts < 10 ? `0${minuts}` : minuts;
+      seconds = seconds < 10 ? `0${seconds}` : seconds;
+
+      time.innerHTML = `${minuts}:${seconds}`;
+
+      if (--duration <= 0) {
         clearInterval(countDownInterval);
         submitBtn.click();
       }
-    }, 1000);
-  }
+    }
+  }, 1000);
 }
 
 function endGame(qCount) {
