@@ -459,6 +459,7 @@ nav .page-stlye .holder div:nth-child(3) {
 @media (min-width: 1024px) {
   .content {
     width: 900px;
+    font-size: 25px;
   }
 }
 .content .quistion-info {
@@ -525,12 +526,11 @@ nav .page-stlye .holder div:nth-child(3) {
 }
 .content .score-time .score {
   display: flex;
-  width: 60%;
   flex-wrap: wrap;
 }
 .content .score-time .score span {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   display: block;
   background: #ddd;
   border-radius: 50%;
@@ -542,11 +542,6 @@ nav .page-stlye .holder div:nth-child(3) {
 .content .score-time .score span.wrong {
   background: #950000;
 }
-.content .score-time .time {
-  font-weight: bold;
-  color: #fff;
-}
-
 @media (max-width: 767px) {
 }
 /* large screen */
@@ -579,7 +574,6 @@ nav .page-stlye .holder div:nth-child(3) {
 }
 .content p {
   color: #fff;
-  font-size: 10px;
 }
 .content p.name {
   color: var(--main-color);
