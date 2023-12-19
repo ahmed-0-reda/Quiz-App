@@ -145,7 +145,7 @@ function getData(choosenQuiz) {
       createBults(qCount);
       clickEventOnAns();
 
-      countDown(5000, qCount);
+      countDown(10, qCount);
 
       submitBtn.onclick = function () {
         let rightAns = dataArr[currentIndex]["answer"];
@@ -155,7 +155,7 @@ function getData(choosenQuiz) {
         currentIndex++;
 
         clearInterval(countDownInterval);
-        countDown(5000, qCount);
+        countDown(10, qCount);
 
         setTimeout(() => {
           submitBtn.style.display = "block";
