@@ -18,12 +18,12 @@ startGame();
 nightAndDay();
 PlayAgain();
 
-// function startSound() {
-//   let sound = document.querySelector(".start-sound");
-//   setTimeout(() => {
-//     sound.play();
-//   }, 3000);
-// }
+function startSound() {
+  let sound = document.querySelector(".start-sound");
+  setTimeout(() => {
+    sound.play();
+  }, 3000);
+}
 
 function createQ() {
   let quizsName = ["عن الرسول", "عن الصحابه", "اساله عامه"];
